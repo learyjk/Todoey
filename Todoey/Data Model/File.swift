@@ -1,0 +1,15 @@
+//
+//  File.swift
+//  Todoey
+//
+//  Created by Keegan Leary on 2/20/19.
+//  Copyright © 2019 Keegan Leary. All rights reserved.
+//
+
+import Foundation
+import RealmSwift
+
+class Data: Object {
+    @objc dynamic var name : String = ""
+    @objc dynamic var age : Int = 0
+}
