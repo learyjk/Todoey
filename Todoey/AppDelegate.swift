@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        print(Realm.Configuration.defaultConfiguration.fileURL)
+        //print(Realm.Configuration.defaultConfiguration.fileURL)
         
         
         let data = Data()
@@ -26,18 +26,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         data.age = 30
         
         do {
-            let realm = try! Realm()
+            _ = try Realm()
         }
         catch {
             print("Error initializing realm \(error)")
         }
         
         return true
-    }
-    
-    func applicationWillTerminate(_ application: UIApplication) {
-       
-        self.saveContext()
     }
     
     // MARK: - Core Data stack
