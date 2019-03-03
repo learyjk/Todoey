@@ -4,7 +4,6 @@
 //
 //  Created by Keegan Leary on 3/2/19.
 //  Copyright © 2019 Keegan Leary. All rights reserved.
-//
 
 import UIKit
 import SwipeCellKit
